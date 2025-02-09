@@ -34,5 +34,13 @@ a {
     }
 
     #home:hover img{
-        filter: invert(0);
+        filter: invert(0);<
         }
+
+
+  @media (max-width: 480px) {
+.dropdown-content {background-color: transparent; box-shadow: 0 0 0 0 transparent;}
+ .dropdown-content a {background-color: transparent;}
+ nav {background-image: linear-gradient(rgba(0,0,0,.2), transparent);}
+   }
+  
