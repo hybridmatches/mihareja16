@@ -118,6 +118,10 @@ footer{
 
 }
 
+ul {
+  list-style-type: square;
+}
+
 .dropbtn {
     background-color: none;
     color: var(--navcolor);
