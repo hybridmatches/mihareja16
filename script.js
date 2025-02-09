@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     const imagePaths = {
-        M: ["../img/btn/pos_m0.png", "../img/btn/pos_m1.png", "../img/btn/pos_m2.png", "../img/btn/pos_m3.png", "../img/btn/pos_m4.png", "../img/btn/pos_m5.png"],
-        I: ["../img/btn/pos_i0.png", "../img/btn/pos_i1.png", "../img/btn/pos_i2.png", "../img/btn/pos_i3.png", "../img/btn/pos_i4.png", "../img/btn/pos_i5.png"],
-        H: ["../img/btn/pos_h0.png", "../img/btn/pos_h1.png", "../img/btn/pos_h2.png", "../img/btn/pos_h3.png", "../img/btn/pos_h4.png", "../img/btn/pos_h5.png"],
-        A: ["../img/btn/pos_a0.png", "../img/btn/pos_a1.png", "../img/btn/pos_a2.png", "../img/btn/pos_a3.png", "../img/btn/pos_a4.png", "../img/btn/pos_a5.png"]
+        M: ["../assets/btn/pos_m0.png", "../assets/btn/pos_m1.png", "../assets/btn/pos_m2.png", "../assets/btn/pos_m3.png", "../assets/btn/pos_m4.png", "../assets/btn/pos_m5.png"],
+        I: ["../assets/btn/pos_i0.png", "../assets/btn/pos_i1.png", "../assets/btn/pos_i2.png", "../assets/btn/pos_i3.png", "../assets/btn/pos_i4.png", "../assets/btn/pos_i5.png"],
+        H: ["../assets/btn/pos_h0.png", "../assets/btn/pos_h1.png", "../assets/btn/pos_h2.png", "../assets/btn/pos_h3.png", "../assets/btn/pos_h4.png", "../assets/btn/pos_h5.png"],
+        A: ["../assets/btn/pos_a0.png", "../assets/btn/pos_a1.png", "../assets/btn/pos_a2.png", "../assets/btn/pos_a3.png", "../assets/btn/pos_a4.png", "../assets/btn/pos_a5.png"]
     };
 
     function createImage(src, className) {
