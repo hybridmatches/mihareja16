@@ -149,6 +149,12 @@ filter: invert(1);
 
 }
 
+footer a {
+    text-decoration: none;
+    color: var(--textcolor);
+}
+
+
 .latest a {
 position: absolute;
 width: 100px;
@@ -158,10 +164,13 @@ color: white;
 padding: 15px;
 text-decoration: none;
 }
+
+
 .latest a:hover {
     background-color: white;
     color: black;
 }
+
 
 
 
