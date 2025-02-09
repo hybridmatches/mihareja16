@@ -1,12 +1,20 @@
+:root {
+    --bgcolor: white;
+    --textcolor: black;
+    --navcolor: black; 
+    --accentcolor: rgb(100,130,220); /*rgb(152, 179, 0)*/
+}
+
 * {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: var(--bgcolor);
+    color: var(--textcolor);
     font-family: monospace;
     font-size: 12pt;
+    margin: 0;
 }
 
 b, h1, h2 {
-    color: rgb(152, 179, 0);
+    color: var(--accentcolor);
 }
 
 h1 {font-size: 18pt;}
@@ -33,6 +41,21 @@ img {
 
 .text img {
     max-width: 500px;
+}
+
+.index {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.index img {
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
 }
 
 .video {
@@ -70,19 +93,21 @@ span {
 }
 
 nav {
-    max-width: 1000px;
+    max-width: 500px;
     margin: auto;
+    padding: 0 10px;
+    text-align: left;
 }
 
 nav a {
-
+    color: var(--navcolor);
     padding: 16px 6px;
     text-decoration: none;
 }
 
 nav a:hover {
-    background-color: black;
-    color: white;
+    background-color: var(--navcolor);
+    color: var(--bgcolor);
 }
 
 footer{
@@ -95,9 +120,9 @@ footer{
 
 .dropbtn {
     background-color: none;
-    color: black;
+    color: var(--navcolor);
     padding: 16px 6px;
-    margin-right: -10px;
+    margin: 0 -10px;
     font-size: 16px;
     border: none;
   }
@@ -110,23 +135,34 @@ footer{
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: var(--bgcolor);
     min-width: 315px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     padding: 0;
+    left: 0;
   }
   
   .dropdown-content a {
-    color: black;
+    color: var(--navcolor);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     margin: 0;
   }
   
-  .dropdown-content a:hover {background-color: #000000;}
+  .dropdown-content a:hover {background-color: var(--navcolor);}
   
   .dropdown:hover .dropdown-content {display: block;}
   
-  .dropdown:hover .dropbtn {background-color: black; color: white;}
+  .dropdown:hover .dropbtn {background-color: var(--navcolor); color: var(--bgcolor)}
+
+  @media (prefers-color-scheme: dark) {
+:root {
+--bgcolor: black;
+--textcolor: rgb(180, 180, 180);
+--navcolor: rgb(255, 255, 255);
+--accentcolor: rgb(255, 255, 255); /*rgb(200,130,210)*/
+}
+    
+  }

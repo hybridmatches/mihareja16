@@ -15,15 +15,15 @@ rm -rf $site
 mkdir -p $site
 
 # List the index
-function setupindex {
-	echo "<h1>Full site index</h1>" > index/content.htm;
-	for f in *; do
-		if [ $f != 'index' ]; then
-			echo "<a href='${f}.html'>{${f}}</a><br>" >> index/content.htm;
-		fi
-	done
-	echo "Index built"
-}
+#function setupindex {
+#	echo "<h1>Full site index</h1>" > index/content.htm;
+#	for f in *; do
+#		if [ $f != 'index' ]; then
+#			echo "<a href='${f}.html'>{${f}}</a><br>" >> index/content.htm;
+#		fi
+#	done
+#	echo "Index built"
+#}
 
 #function sitenav {
 #	echo "<nav class='sitenav'>" > ../inc/nav.htm;
@@ -36,25 +36,31 @@ function setupindex {
 #	echo "nav"
 #}
 
-# Setup topics
 cd $content
 #sitenav;
-setupindex;
+#setupindex;
 for f in *; do
 	cd $f;
 	markup=''
 	topPart=$(cat $headerA $meta $headerB);
 	nav=$(cat $sitenav);
 	contentText=$(cat $contentFile);
-	footer=$(cat $foot);
 	closefile=$(cat $bottom);
 	mainContent="<main>${contentText}</main>";
 	sideBar="<aside>${markup}</aside>";
-	echo ${topPart}${nav}"${mainContent}"${sideBar}${footer}${closefile} > ../../$site/${f}.html
+
+	if [ "$f" = "index" ]; then
+		echo ${topPart}${nav}"${mainContent}"${sideBar}${closefile} > ../../$site/${f}.html
+	else
+		footer=$(cat $foot);
+		echo ${topPart}${nav}"${mainContent}"${sideBar}${footer}${closefile} > ../../$site/${f}.html
+	fi
+
 	cd ..
 	tally=$((tally+1))
 done
 echo "${tally} topics built"
+
 
 
 
