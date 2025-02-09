@@ -1,0 +1,38 @@
+nav {
+
+    background-color: transparent;
+}
+
+nav a {
+    color: white;
+    background-color: transparent;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+a {
+    color: white;
+}
+
+.dropbtn {
+    color: white;
+  }
+
+.dropdown:hover .dropbtn {
+    background-color: white;
+    color: black;
+}
+
+.dropdown-content a {background-color: black; color: white}
+.dropdown-content a:hover {background-color: white; color: black}
+
+#home img{
+    filter: invert(1);
+    }
+
+    #home:hover img{
+        filter: invert(0);
+        }

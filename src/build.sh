@@ -49,7 +49,7 @@ for f in *; do
 	mainContent="<main>${contentText}</main>";
 	sideBar="<aside>${markup}</aside>";
 
-	if [ "$f" = "index" ]; then
+	if [ "$f" = "home" ]; then
 		echo ${topPart}${nav}"${mainContent}"${sideBar}${closefile} > ../../$site/${f}.html
 	else
 		footer=$(cat $foot);
