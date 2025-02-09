@@ -261,3 +261,19 @@ h1 img {filter: invert(1)}
         }
     
   }
+
+
+  @media (max-width: 480px) {
+    .text, .video, .gallery, .text-wide {width: 100%; padding: 0;}
+    .logo {display: none;}
+    .dropdown div {display: block; position: relative;}
+    .dropdown .dropbtn {display: none;}
+    .dropdown-content {margin-left: -10px; margin-bottom: -10px}
+    .dropdown-content a {padding: 16px 5px;}
+    img {width: 100%; margin: 0}
+    nav a {display: block;}
+    nav {padding-bottom: 10px;}
+    body {background-color: black; padding: 5px}
+    .latest {display: none;}
+  }
+  
