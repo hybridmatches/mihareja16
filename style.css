@@ -15,7 +15,7 @@ body {
 }
 
 img {
-    max-width: 500px;
+
 }
 
 .logo img {
@@ -31,16 +31,34 @@ img {
     margin: auto;
 }
 
+.text img {
+    max-width: 500px;
+}
+
 .video {
-    max-width: 1000px;
     margin: auto;
     text-align: center;
+    position: relative;
+    aspect-ratio: 16 / 9;
+    max-width: 1000px;
+}
+
+.video iframe {
+    width: 100%;
+    position: relative;
+    aspect-ratio: 16 / 9;
+    height: 100%;
 }
 
 .gallery {
     max-width: 1000px;
     margin: auto;
     text-align: center;
+}
+
+.gallery img {
+    max-width: 495px;
+    margin: 0;
 }
 
 div {
