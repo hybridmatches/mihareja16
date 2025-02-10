@@ -278,7 +278,7 @@ h1 img {filter: invert(1)}
     .dropdown {width: 100%;}
     .dropdown div {display: block; position: relative;}
     .dropdown .dropbtn {display: none;}
-    .dropdown-content {margin-left: -10px; margin-bottom: -10px; width: 100%;}
+    .dropdown-content {margin-left: -10px; margin-bottom: -10px; width: 100%; box-shadow: 0 0 0 0 black;}
     .dropdown-content a {padding: 16px 5px;}
     img {width: 100%; margin: 0}
     nav a {display: block;}
